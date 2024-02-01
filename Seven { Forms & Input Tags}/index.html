@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form & Table with Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Contact Form</h1>
+
+    <table>
+      <form
+        id="contactForm"
+        action="/submit"
+        method="post"
+        onsubmit="return validateForm()"
+      >
+        <tr>
+          <th colspan="2">Personal Information</th>
+        </tr>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" required /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <label
+              ><input type="radio" name="gender" value="male" checked />
+              Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" /> Female</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label
+              ><input type="checkbox" name="subscribe" checked /> Subscribe to
+              Newsletter</label
+            >
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><label for="country">Country:</label></td>
+          <td>
+            <select id="country" name="country">
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+              <option value="ca">Canada</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="message">Message:</label></td>
+          <td>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="file">Upload File:</label></td>
+          <td><input type="file" id="file" name="file" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit">Submit</button>
+          </td>
+        </tr>
+      </form>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

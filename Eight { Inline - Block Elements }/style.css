@@ -1,0 +1,21 @@
+p {
+  height: 20vh;
+  text-align: center;
+
+  background-color: aquamarine;
+}
+
+a {
+  background-color: yellowgreen;
+  text-transform: uppercase;
+}
+
+div {
+  background-color: aquamarine;
+  height: 20vh;
+}
+
+span {
+  background-color: rgb(198, 165, 230);
+  text-transform: uppercase;
+}
