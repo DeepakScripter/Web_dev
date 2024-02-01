@@ -1,0 +1,17 @@
+1. `<!DOCTYPE html>`: This is a declaration that specifies the version of HTML being used, in this case, HTML5.
+
+2. `<html lang="en">`: The root element of the HTML document. The `lang` attribute is set to "en" for English, indicating the language of the document.
+
+3. `<head>`: This section contains meta-information about the HTML document, such as character set, viewport settings, and the document title.
+
+    - `<meta charset="UTF-8">`: Specifies the character encoding for the document, typically set to UTF-8, which supports a wide range of characters.
+
+    - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Sets the viewport properties for responsive design. It ensures that the width of the viewport is equal to the device width, and the initial zoom level is set to 1.0.
+
+    - `<title>Document</title>`: Defines the title of the HTML document, which is displayed in the browser's title bar or tab.
+
+4. `<body>`: The main content of the HTML document is contained within the `<body>` tags.
+
+    - `<h1>MY First Code</h1>`: This is a heading level 1 element, displaying the text "MY First Code" as the main heading of the document.
+
+In summary, this HTML document sets up the basic structure, character encoding, viewport settings, and includes a simple heading in the body. This is a minimal example and can be expanded upon with additional HTML elements and content for a complete webpage.
