@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eye-Catching Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .nav {
+        background-color: var(--color);
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul li {
+        opacity: var(--defop);
+        margin-right: 20px;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      ul li:last-child {
+        margin-right: 0;
+      }
+
+      ul li:hover {
+        opacity: 1;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      /* Styling the first list item differently */
+      ul li:first-child {
+        --color: rgb(60, 179, 113);
+        background-color: var(--color);
+      }
+
+      .container {
+        background-color: var(--seccolor);
+        padding: 40px;
+        text-align: center;
+        color: #333;
+      }
+
+      h1 {
+        color: #333;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <div class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Content Container -->
+    <div class="container">
+      <h1>Welcome to Our Website</h1>
+      <p>
+        Explore the beauty of our content and discover amazing things. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Esse assumenda qui ad
+        dolorem consequuntur facilis aliquam. Unde sapiente ipsam quaerat, at
+        debitis nesciunt, totam nulla quae ad ipsum veniam sed eligendi rem
+        deserunt quos maiores modi. Illo eaque expedita natus iusto nostrum
+        dolorem quos est.
+      </p>
+    </div>
+  </body>
+</html>

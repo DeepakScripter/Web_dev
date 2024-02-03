@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: #3fc1c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    /* Set a maximum width for better readability on larger screens */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.btn {
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* Allow buttons to wrap on smaller screens */
+    justify-content: space-around;
+    margin-bottom: 15px;
+
+}
+
+button {
+    padding: 10px;
+
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.more {
+
+    align-items: center;
+    margin: 10px 30% 0px 30%;
+}
+
+.more button {
+    align-items: center;
+    background-color: #f39c12;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}

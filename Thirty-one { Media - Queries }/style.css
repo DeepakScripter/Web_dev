@@ -1,0 +1,39 @@
+body {
+    background-color: red;
+    margin: 0;
+}
+
+/* Media query based on screen orientation */
+@media screen and (orientation: portrait) {
+    body {
+        border: 2px solid purple;
+    }
+}
+
+/* Media query based on screen width */
+@media only screen and (max-width: 455px) {
+    body {
+        background-color: blue;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    /* Added for better spacing */
+    padding: 20px;
+    /* Added for better spacing */
+}
+
+.box {
+    width: 100px;
+    /* Adjusted for better visibility */
+    height: 100px;
+    /* Adjusted for better visibility */
+    background-color: steelblue;
+    margin: 5px;
+}

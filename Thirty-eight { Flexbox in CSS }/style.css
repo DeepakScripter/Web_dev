@@ -1,0 +1,56 @@
+ * {
+     margin: 0;
+     padding: 0;
+     /* box-sizing: border-box; */
+ }
+
+ /* Flex Container */
+ .container {
+     border: 5px solid red;
+
+     padding: 10px;
+     display: flex;
+     /* Container becomes a flex container */
+     height: 100vh;
+     /* 80% of the viewport height */
+     align-items: center;
+     /* Align items along the cross-axis (vertically) at the center */
+     /* flex-wrap: wrap; */
+     /* Allow items to wrap onto multiple lines if needed */
+     flex-flow: row wrap;
+     /* Shorthand for specifying flex-direction and flex-wrap */
+     gap: 40px 10px;
+     /* Gap between items (vertical 40px, horizontal 10px) */
+     background-color: grey;
+ }
+
+ /* Flex Items */
+ .item {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 92px;
+     /* Height of each item */
+     width: 92px;
+     /* Width of each item */
+     border: 2px dotted black;
+     border-radius: 10px;
+     padding: 10px;
+     /* Border for each item */
+     background-color: white;
+     /* Background color of each item */
+ }
+
+ /* Ordering */
+ .order-1 {
+     background-color: aqua;
+     order: 1;
+     /* Change the order of this specific item */
+ }
+
+ /* Align Self */
+ .item1 {
+     align-self: flex-start;
+     /* Align this specific item to the flex-end along the cross-axis */
+     background-color: bisque;
+ }

@@ -1,0 +1,28 @@
+nav ul {
+    list-style-type: none;
+    /* Remove default list bullets */
+    padding: 0;
+    /* Remove default padding */
+}
+
+nav ul li {
+    background-color: yellow;
+    /* Background color for list items */
+    border: 2px solid black;
+    /* Border around each list item */
+    margin: 5px 0;
+    /* Add margin for spacing between list items */
+    padding: 10px;
+    /* Add padding for better visual appearance */
+}
+
+/* Custom list style using a Unicode emoji */
+nav ul li::before {
+    content: "🔥";
+    /* Unicode emoji as the list item marker */
+    display: inline-block;
+    margin-right: 10px;
+    /* Add space between the emoji and the text */
+    /* list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+    /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+}

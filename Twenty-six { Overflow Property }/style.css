@@ -1,0 +1,15 @@
+.container {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    overflow: auto;
+    /* Try changing this value to see different behaviors */
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+.content {
+    width: 300px;
+    height: 150px;
+    background-color: lightblue;
+}

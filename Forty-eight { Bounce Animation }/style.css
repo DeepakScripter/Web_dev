@@ -1,0 +1,36 @@
+ .container {
+     position: relative;
+     height: 80vh;
+     width: 80vw;
+     background-color: blue;
+     margin: 20px;
+     overflow: hidden;
+ }
+
+ .box {
+     height: 10%;
+     width: 10%;
+     background-color: red;
+     border-radius: 70px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     animation: boxMove 2s infinite alternate linear;
+ }
+
+ @keyframes boxMove {
+     0% {
+         background-color: #000000;
+         transform: translateX(500%);
+     }
+
+     50% {
+         background-color: #e74c3c;
+         transform: translateY(-1000%);
+     }
+
+     100% {
+         background-color: #2ecc71;
+         transform: translateX(1000%);
+     }
+ }

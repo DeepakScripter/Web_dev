@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap");
+
+body {
+    background-color: chocolate;
+}
+
+.main {
+    border: 5px solid brown;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: "Poppins", "Lucida Sans", "Lucida Sans Regular",
+        "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: hsl(130, 61%, 44%);
+    background-color: rgb(76, 125, 59);
+}
+
+p {
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 7px;
+}
+
+.lorem {
+    border: 2px solid red;
+    width: 145px;
+    word-break: break-all;
+}

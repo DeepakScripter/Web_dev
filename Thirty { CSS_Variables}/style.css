@@ -1,0 +1,38 @@
+       :root {
+           --color: rgb(255, 0, 247);
+           --seccolor: rgb(231, 164, 246);
+           --defpad: 23px;
+           --defop: 0.4;
+       }
+
+       * {
+           margin: 0;
+           padding: 0;
+       }
+
+       /* Navigation Styling */
+       .nav {
+           background-color: var(--color);
+       }
+
+       ul {
+           display: flex;
+       }
+
+       ul li {
+           opacity: var(--defop);
+           list-style: none;
+           padding: var(--defpad);
+           border: 2px solid var(--seccolor);
+       }
+
+       /* Styling the first list item differently */
+       ul li:first-child {
+           --color: rgb(243, 87, 8);
+           background-color: var(--color, blue);
+       }
+
+       /* Container Styling */
+       .container {
+           background-color: var(--seccolor);
+       }

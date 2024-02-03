@@ -1,0 +1,16 @@
+.container {
+    height: 488px;
+    width: 466px;
+    border: 2px solid black;
+    background-position: center center;
+    background-clip: border-box;
+    background-image: url("https://us.123rf.com/450wm/progressman/progressman1909/progressman190900115/130695651-woman-in-black-coat-walking-along-the-sea.jpg?ver=6");
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 466px;
+    height: 488px;
+    object-fit: contain;
+    object-position: 10px 20px;
+}

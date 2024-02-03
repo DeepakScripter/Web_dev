@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS_Transform</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80vh;
+      }
+
+      .transform-box {
+        height: 150px;
+        width: 150px;
+        background-color: #3498db;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        transition: transform 0.5s ease;
+      }
+
+      /* Rotate */
+      .rotate:hover {
+        transform: rotate(45deg);
+      }
+
+      /* Scale */
+      .scale:hover {
+        transform: scale(1.5, 1.5);
+      }
+
+      /* Skew */
+      .skew:hover {
+        transform: skew(30deg, 20deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Rotate Transformation -->
+      <div class="transform-box rotate">Rotate</div>
+
+      <!-- Scale Transformation -->
+      <div class="transform-box scale">Scale</div>
+
+      <!-- Skew Transformation -->
+      <div class="transform-box skew">Skew</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+ * {
+     margin: 0;
+     padding: 0;
+     background-color: cadetblue;
+ }
+
+ .box {
+     height: 433px;
+     width: 80vw;
+     padding: 5px;
+     margin: 3px;
+     border: 10px solid black;
+     border-radius: 10px;
+ }
+
+ .box1 {
+     background-color: aqua;
+     /* Positioned absolutely relative to the nearest positioned ancestor (.parent) */
+     position: absolute;
+     top: 1500px;
+     /* Adjusted top value for visibility in this example */
+     left: 3px;
+ }
+
+ .box2 {
+     background-color: azure;
+     /* Positioned relatively to its normal position in the document flow */
+     position: relative;
+     top: 34px;
+     left: 56px;
+ }
+
+ .box3 {
+     background-color: antiquewhite;
+     /* Positioned fixed to the viewport, stays in the same position when scrolling */
+     position: fixed;
+     bottom: 0px;
+     left: 8vw;
+     height: 111px;
+ }
+
+ .box4 {
+     background-color: purple;
+     /* Positioned statically, according to the normal flow of the document (default) */
+     /* filter: invert(0); */
+ }
+
+ .parent {
+     padding: 43px;
+     margin: 34px;
+     border: 10px solid purple;
+     /* Position is set to relative to make box1 positioned absolutely relative to this container */
+     position: relative;
+     background-color: blueviolet;
+ }
+
+ h1 {
+     font-size: 100px;
+     /* Reduced font size for better visibility in this example */
+     margin: 0;
+     color: white;
+     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+ }

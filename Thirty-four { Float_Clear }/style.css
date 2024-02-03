@@ -1,0 +1,26 @@
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+            overflow: hidden;
+            /* clearfix for the floated elements */
+        }
+
+        img {
+            float: right;
+            width: 150px;
+            /* Added width to the image for better visualization */
+            height: auto;
+            margin: 0 0 10px 10px;
+            /* Provide margin to create some space around the image */
+        }
+
+        .card {
+            border: 2px solid red;
+            margin-bottom: 10px;
+            /* Added margin to separate each card */
+        }
+
+        .card:nth-child(3) {
+            background-color: aqua;
+            clear: left;
+        }

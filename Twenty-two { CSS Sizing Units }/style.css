@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 12px;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 80vw;
+    /* 80% of the viewport width */
+    height: 10vh;
+    /* 10% of the viewport height */
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.container {
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 80vw;
+    /* 80% of the viewport width */
+    min-height: 80vh;
+    /* Minimum 80% of the viewport height */
+    margin: 23px auto;
+    font-size: 18px;
+    background-color: aquamarine;
+}
+
+.container>div {
+    font-size: 2em;
+    /* Relative to the font-size of the parent element */
+    border: 2px solid red;
+    width: 50%;
+    /* 50% of the parent's width */
+}
+
+.container>div>div {
+    border: 2px solid blue;
+    width: 50%;
+    /* 50% of the parent's width */
+}
+
+.mycont {
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin: 23px auto;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    width: 80vw;
+    /* 80% of the viewport width */
+}

@@ -1,0 +1,219 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.wrap {
+    margin-top: 8%;
+    max-width: 1000px;
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: #3d1919;
+    border-radius: 50px;
+}
+
+
+.box {
+    width: calc(20%);
+    margin: 20px 20px;
+    background: #896d6d;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    line-height: 130px;
+    border-radius: 50px;
+    border: 1px dotted black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+
+.blue {
+    background-color: rgba(61, 79, 84, 0.5);
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+
+.scaleX {
+    transform: scaleX(1);
+    transition: transform 0.5s ease;
+
+}
+
+
+.box:hover .scaleX {
+    transform: scaleX(2);
+    background-color: rgb(162, 162, 209);
+}
+
+.scaleY {
+    transform: scaleY(1);
+    transition: transform 0.5s ease;
+}
+
+
+.box:hover .scaleY {
+    transform: scaleY(2);
+    background-color: rgb(162, 162, 209);
+}
+
+.scale {
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+}
+
+
+.box:hover .scale {
+    transform: scale(1.5, 1.5);
+    background-color: rgb(162, 162, 209);
+}
+
+.translateX {
+    transform: translateX(1);
+    transition: transform 0.5s ease;
+}
+
+
+.box:hover .translateX {
+    transform: translateX(2em);
+    background-color: rgb(162, 162, 209);
+}
+
+.translateY {
+    transform: translateY(1);
+    transition: transform 0.5s ease;
+
+}
+
+
+.box:hover .translateY {
+    transform: translateY(2em);
+    background-color: rgb(162, 162, 209);
+}
+
+.translate {
+    transform: translate(1, 1);
+    transition: transform 0.5s ease;
+}
+
+
+.box:hover .translate {
+    transform: translate(2em, 2em);
+    background-color: rgb(162, 162, 209);
+}
+
+.matrix {
+    transform: matrix(1, 1, 1, 1);
+    transition: transform 0.5s ease;
+
+}
+
+.box:hover .matrix {
+    transform: matrix(1, -1, 0, 1, 0, 0);
+    background-color: rgb(162, 162, 209);
+}
+
+.rotate {
+    transform: rotate(0);
+    transition: transform 0.5s ease;
+}
+
+.box:hover .rotate {
+    transform: rotate(270deg);
+    background-color: rgb(162, 162, 209);
+}
+
+.skew {
+    transform: skew(1, 1);
+    transition: transform 0.5s ease;
+}
+
+.box:hover .skew {
+    transform: skew(30deg, 20deg);
+    background-color: rgb(162, 162, 209);
+
+}
+
+.skewX {
+    transform: skewX(1);
+    transition: transform 0.5s ease;
+}
+
+.box:hover .skewX {
+    transform: skewX(30deg);
+    background-color: rgb(162, 162, 209);
+
+}
+
+.skewY {
+    transform: skewY(1);
+    transition: transform 0.5s ease;
+}
+
+.box:hover .skewY {
+    transform: skewY(30deg);
+    background-color: rgb(162, 162, 209);
+
+}
+
+.matrix3d {
+    transform: matrix3d(1);
+    transition: transform 0.5s ease;
+}
+
+.box:hover .matrix3d {
+    transform: matrix3d(0.8535533905932737, 0.4999999999999999, 0.14644660940672619, 0, -0.4999999999999999, 0.7071067811865476, 0.4999999999999999, 0, 0.14644660940672619, -0.4999999999999999, 0.8535533905932737, 0, 22.62994231491119, -20.3223304703363, 101.3700576850888, 1);
+    background-color: rgb(162, 162, 209);
+}
+
+.translate3d {
+    transform: translate3d(1px, 1px, 1);
+    transition: transform 0.5s ease;
+}
+
+.box:hover .translate3d {
+    transform: translate3d(1px, 1px, 50px) rotate3d(3, 2, 2, 90deg);
+    background-color: rgb(162, 162, 209);
+
+}
+
+.rotateY {
+    transform: perspective(1) scaleZ(1) rotateY(0deg);
+    transition: transform 0.5s ease;
+}
+
+.box:hover .rotateY {
+    transform: perspective(500px) scaleZ(2) rotateY(45deg);
+    background-color: rgb(162, 162, 209);
+
+}
+
+.rotateX {
+    transform: perspective(1) scaleZ(1) rotateX(0deg);
+    transition: transform 0.5s ease;
+}
+
+.box:hover .rotateX {
+    transform: perspective(500px) scaleZ(2) rotateX(45deg);
+    background-color: rgb(162, 162, 209);
+
+}
+
+.translateZ {
+    transform: translateZ(1px);
+    transition: transform 0.5s ease;
+}
+
+.box:hover .translateZ {
+    transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
+    background-color: rgb(162, 162, 209);
+
+}

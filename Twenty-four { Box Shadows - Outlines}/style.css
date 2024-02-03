@@ -1,0 +1,14 @@
+.box {
+    /* box-shadow: horizontal-offset vertical-offset blur-radius color; */
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #333;
+    box-shadow: 5px 15px 5px #70a711;
+    outline: 2px dotted #e695f7;
+    border-radius: 10px;
+}
+
+.text-element {
+    /* text-shadow: horizontal-offset vertical-offset blur-radius color; */
+    text-shadow: 5px 5px 3px #e695f7;
+}

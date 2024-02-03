@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Paragraphs</title>
+    <style>
+        /* Target the first paragraph inside each div */
+        div > p:first-child {
+            background-color: yellow;
+            color: red;
+            text-decoration: dashed;
+            padding: 10px;
+             text-align: center;
+        }
+
+        /* Target the remaining paragraphs inside each div */
+        div > p:not(:first-child) {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .main {
+            background-color: cadetblue;
+            border: 5px solid rebeccapurple ;
+            border-radius: 5px;
+            padding: 50px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
+        <p>I am another para</p>
+        <p>I am also another para</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
+        <p>I am another para</p>
+        <p>I am also another para</p>
+    </div>
+    </div>
+</body>
+</html>

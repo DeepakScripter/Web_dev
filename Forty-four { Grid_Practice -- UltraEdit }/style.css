@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+    /* Make the logo responsive */
+    max-width: 164px;
+    /* Set a max-width to avoid stretching on larger screens */
+}
+
+.right ul {
+    display: flex;
+    gap: 10px;
+    /* Reduce the gap for smaller screens */
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li span {
+    padding: 0 5px;
+}
+
+.second {
+    text-align: center;
+    padding: 20px;
+    /* Adjust padding for smaller screens */
+    background-color: #f2f2f2;
+}
+
+.second .win {
+    font-size: 24px;
+    /* Adjust font size for smaller screens */
+    font-weight: bold;
+    color: #141B34;
+}
+
+.second .pra {
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
+    margin: 10px 0;
+    color: #333;
+}
+
+.second button {
+    width: 100%;
+    /* Make the button fill the container */
+    height: 40px;
+    /* Adjust height for smaller screens */
+    border-radius: 10px;
+    background-color: #00b6d1;
+    color: white;
+    cursor: pointer;
+}
+
+sub {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    /* Adjust margin for smaller screens */
+    font-size: 12px;
+    /* Adjust font size for smaller screens */
+    color: #555;
+}
+
+.card {
+    background-color: #dccfcf;
+    height: 162px;
+    width: 100%;
+    /* Make the card fill the container */
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn>button {
+    
+    /* Make the button fill the container */
+    height: 36px;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn>button>a {
+    color: wheat;
+    text-decoration: none;
+}
+
+.btn1 {
+    background-color: #5cb85c;
+}
+
+.btn2 {
+    background-color: #00b6d1;
+}
+
+.langua {
+    font-weight: bolder;
+}
+
+.templete {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Responsive grid */
+    grid-gap: 10px;
+}

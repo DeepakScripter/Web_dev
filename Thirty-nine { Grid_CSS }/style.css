@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Example 1: Using grid-template-columns and grid-template-rows */
+.container-1 {
+    background-color:whitesmoke;
+    margin: 25px;
+    width: 80vw;
+    height: 100vh;
+    border: 5px double rgb(80, 99, 44);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(2, 80px);
+    row-gap: 10px;
+    column-gap: 44px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Example 2: Using grid-template-areas */
+.container-2 {
+    margin: 25px;
+    width: 80vw;
+    background-color: whitesmoke;
+    border: 5px double rgb(80, 99, 44);
+        border-radius: 10px;
+        padding: 10px;
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "side article article"
+        "footer footer footer";
+}
+
+.item {
+    font-size: 50px;
+    background-color: rgb(211, 150, 36);
+    color: brown;
+    border: 3px dotted red;
+    border-radius: 10px;
+    margin: 5px;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Example 1: Using grid-row and grid-column */
+.item-1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.item-4 {
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+/* Example 2: Using grid-area */
+.secound {
+    grid-area: nav;
+    background-color: rgb(133, 182, 182);
+}
+
+.item-2 {
+    grid-area: side;
+    background-color: beige;
+}
+
+.item-3 {
+    grid-area: article;
+    background-color: azure;
+}
+
+.item-4 {
+    grid-area: footer;
+}
+
+.item-5 {
+    grid-area: nav;
+    /* Overlapping with item-1 */
+}
