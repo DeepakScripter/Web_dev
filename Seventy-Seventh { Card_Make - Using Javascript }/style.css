@@ -1,0 +1,63 @@
+      /* Styling for the card container */
+      body {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      .container {
+          height: 100vh;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background-color: #4f3434;
+
+
+      }
+
+      /* Styling for individual card */
+      .card {
+          display: flex;
+          border: 2px solid black;
+          width: 300px;
+          justify-content: center;
+          align-items: center;
+          padding: 12px;
+          flex-direction: column;
+          color: rgb(0, 0, 0);
+          background-color: rgb(104, 137, 137);
+          padding: 10px;
+          border-radius: 10px;
+      }
+
+      /* Styling for the image within the card */
+      .image img {
+          width: 100%;
+          border-radius: 8px;
+      }
+
+      /* Styling for the title text within the card */
+      .text h1 {
+          margin: 10px 0;
+      }
+
+      /* Styling for the details text within the card */
+      .text p {
+          margin: 0;
+          color: #000000;
+      }
+
+      /* Styling for the duration capsule */
+      .image .capsule {
+          position: absolute;
+          bottom: 8px;
+          right: 8px;
+          background: #242020;
+          opacity: 0.9;
+          color: white;
+          padding: 3px;
+          border-radius: 3px;
+          font-size: 12px;
+      }

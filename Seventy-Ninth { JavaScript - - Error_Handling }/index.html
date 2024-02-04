@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #8c8080;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      background-color: #855555;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    input {
+      padding: 8px;
+      margin: 5px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+  <title>Error Handling</title>
+</head>
+<body>
+
+<div class="calculator">
+  <h2>Error Handling</h2>
+  <form id="calculatorForm">
+    <label for="firstNumber">Enter first number:</label>
+    <input type="text" id="firstNumber" required>
+
+    <label for="secondNumber">Enter second number:</label>
+    <input type="text" id="secondNumber" required>
+
+    <button type="button" onclick="calculateSum()">Calculate Sum</button>
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<script>
+  function calculateSum() {
+    let a = document.getElementById('firstNumber').value;
+    let b = document.getElementById('secondNumber').value;
+
+    if (isNaN(a) || isNaN(b)) {
+      alert("Sorry, this is not allowed. Please enter valid numbers.");
+      return;
+    }
+
+    let sum = parseInt(a) + parseInt(b);
+
+    try {
+      console.log("The sum is ", sum);
+      document.getElementById('result').innerText = "The sum is " + sum;
+    } catch (error) {
+      console.log("Error occurred:", error);
+      document.getElementById('result').innerText = "An error occurred. Please try again.";
+    } finally {
+      console.log("Files are being closed and db connection is being closed");
+    }
+  }
+</script>
+
+</body>
+</html>
