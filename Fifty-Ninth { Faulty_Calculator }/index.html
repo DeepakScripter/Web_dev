@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>Faulty_Calculator</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container for the calculator -->
+    <div class="calculator-container">
+      <!-- Heading for the calculator -->
+      <h1>Faulty Calculator</h1>
+      <!-- Form for user input -->
+      <form id="calculator-form">
+        <!-- Input field for the first number -->
+        <input type="number" id="first-number" required placeholder="Enter First Number"/>
+        
+        <!-- Dropdown menu for selecting the operation -->
+        <select id="operation" required>
+          <option value="#">Select operation</option>
+          <option value="+">Addition</option>
+          <option value="-">Subtraction</option>
+          <option value="*">Multiplication</option>
+          <option value="/">Division</option>
+        </select>
+        
+        <!-- Input field for the second number -->
+        <input type="number" id="second-number" required placeholder="Enter second number"/>
+        
+        <!-- Button to trigger the calculation -->
+        <button type="button" onclick="calculate()">Calculate</button>
+      </form>
+
+      <!-- Container to display the result -->
+      <div id="result-container">
+        <!-- Result will be displayed here -->
+      </div>
+    </div>
+    
+    <!-- Script tag to include external JavaScript file -->
+    <script src="index.js"></script>
+  </body>
+</html>

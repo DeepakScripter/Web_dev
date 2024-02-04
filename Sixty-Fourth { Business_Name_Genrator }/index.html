@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Name Generator</title>
+</head>
+<body>
+    <script>
+        // Generate a random number between 0 and 1
+        const getRandomNumber = () => Math.random();
+
+        // Generate a random word based on the provided options
+        const generateRandomWord = (options) => {
+            const rand = getRandomNumber();
+
+            if (rand < options[0]) {
+                return options[1];
+            } else if (rand < options[2]) {
+                return options[3];
+            } else {
+                return options[4];
+            }
+        };
+
+        // Options for each word
+        const firstOptions = [0.33, "Crazy", 0.66, "Amazing", "Fire"];
+        const secondOptions = [0.33, "Engine", 0.66, "Foods", "Garments"];
+        const thirdOptions = [0.33, "Bros", 0.66, "Limited", "Hub"];
+
+        // Generate each word
+        const first = generateRandomWord(firstOptions);
+        const second = generateRandomWord(secondOptions);
+        const third = generateRandomWord(thirdOptions);
+
+        // Output the generated business name
+        console.log(`${first} ${second} ${third}`);
+    </script>
+</body>
+</html>

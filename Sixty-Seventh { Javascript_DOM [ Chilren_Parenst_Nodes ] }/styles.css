@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+#parent {
+    background-color: greenyellow;
+    border: 5px solid rgb(128, 128, 214);
+    padding: 20px;
+    margin: 10px;
+}
+
+.child {
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgb(28, 23, 23);
+    padding: 10px;
+    margin: 50px;
+}

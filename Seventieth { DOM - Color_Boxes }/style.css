@@ -1,0 +1,72 @@
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(200, 231, 231);
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row 2;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+        
+    }
+
+    .box {
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 45px;
+        border: 2px solid black;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    
+    }
+         #reloadButton {
+             margin-top: 20px;
+             padding: 10px;
+             cursor: pointer;
+         }
+
+                 
+                 .button-89 {
+                     --b: 3px;
+                     /* border thickness */
+                     --s: .45em;
+                     /* size of the corner */
+                     --color: #373B44;
+        
+                     padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+                     color: var(--color);
+                     --_p: var(--s);
+                     background:
+                         conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+                     transition: .3s linear, color 0s, background-color 0s;
+                     outline: var(--b) solid #0000;
+                     outline-offset: .6em;
+                     font-size: 16px;
+        
+                     border: 0;
+        
+                     user-select: none;
+                     -webkit-user-select: none;
+                     touch-action: manipulation;
+                 }
+        
+                 .button-89:hover,
+                 .button-89:focus-visible {
+                     --_p: 0px;
+                     outline-color: var(--color);
+                     outline-offset: .05em;
+                 }
+        
+                 .button-89:active {
+                     background: var(--color);
+                     color: #fff;
+                 }

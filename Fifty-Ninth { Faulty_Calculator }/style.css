@@ -1,0 +1,82 @@
+/* Set the base styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dbc0c0;
+    /* Background color for the entire page */
+}
+
+/* Styles for the calculator container */
+.calculator-container {
+    background-color: #886c6c;
+    /* Background color for the calculator container */
+    padding: 20px;
+    border-radius: 8px;
+    /* Box shadow for a subtle depth effect */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the calculator form within the container */
+#calculator-form {
+    margin-bottom: 20px;
+}
+
+/* Styles for labels within the form */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styles for input, select, and button elements within the form */
+input,
+select,
+button {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: navajowhite;
+    /* Border color for input fields */
+    background-color: rgb(156, 229, 229);
+    border-radius: 10px;
+    /* Box shadow for a subtle depth effect */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* Styles for the button element */
+button {
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #38D2D2;
+    /* Background image using radial gradients for a decorative effect */
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    /* Box shadow for a subtle depth effect */
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+/* Styles for the result container */
+#result-container {
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ce2e2e;
+    /* Box shadow for a subtle depth effect */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}

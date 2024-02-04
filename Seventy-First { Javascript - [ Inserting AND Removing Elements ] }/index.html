@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM { Inserting && Removing Element }</title>
+    <style>
+        /* Styling for demonstration purposes */
+        .red {
+            color: red;
+        }
+
+        #insertExample {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #333;
+        }
+
+        /* Add a "hidden" class to hide the element */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="insertExample">
+        <!-- Inserted elements will go here -->
+    </div>
+
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="harry" data-conceptby="rohan">Hey, I am a box</div>
+        <div class="box">Hey, I am a box</div>
+
+       
+    </div>
+     <!-- External script for better organization -->
+        <script src="script.js"></script>
+</body>
+
+</html>
