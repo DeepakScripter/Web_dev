@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Note App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-color: aqua;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .note {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow-wrap: break-word;
+            border-radius: 10px;
+            background-color: wheat;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button id="addNoteBtn">Add Note</button>
+    <div class="note"></div>
+    <script>
+        function saveNoteToLocalStorage(note) {
+            localStorage.setItem("note", note);
+        }
+
+        let note = localStorage.getItem("note");
+        if (note) {
+            document.querySelector(".note").innerHTML = note;
+        }
+
+        document.querySelector("#addNoteBtn").addEventListener("click", () => {
+            let newNote = prompt("Enter your note");
+            if (newNote !== null && newNote.trim() !== "") {
+                saveNoteToLocalStorage(newNote);
+                document.querySelector(".note").innerHTML = newNote;
+            } else {
+                alert("Note cannot be empty. Please enter a valid note.");
+            }
+        });
+    </script>
+</body>
+
+</html>
