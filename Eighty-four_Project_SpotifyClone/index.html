@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character set and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to main and utility stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+
+    <!-- Set the title of the webpage -->
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <!-- Main container with flex layout and black background -->
+    <div class="container flex bg-black">
+
+        <!-- Left sidebar -->
+        <div class="left">
+
+            <!-- Close button with close icon -->
+            <div class="close">
+                <img width="30" class="invert" src="img/close.svg" alt="">
+            </div>
+
+            <!-- Home section with Spotify logo and navigation links -->
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width="110" class="invert" src="img/logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+
+            <!-- Library section with heading, song list, and footer links -->
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="">
+                    <h2>Your Music Hub</h2>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                        <!-- Songs will be dynamically added here -->
+                    </ul>
+                </div>
+
+                <!-- Footer with legal and privacy links -->
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right section with main content -->
+        <div class="right bg-grey rounded">
+
+            <!-- Header with navigation and sign-up/log-in buttons -->
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <!-- Hamburger icon for mobile navigation -->
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                        <!-- Navigation arrows -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Arrow icon -->
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Arrow icon -->
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Sign-up and log-in buttons -->
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <!-- Main content with Spotify playlists -->
+            <div class="spotifyPlaylists">
+                <h1>Playlist Pulse</h1>
+
+                <!-- Container for playlist cards -->
+                <div class="cardContainer"> </div>
+
+                <!-- Playbar with seekbar, song info, and playback controls -->
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <!-- Previous Song Button -->
+                            <img width="35" id="previous" src="img/prevsong.svg" alt="Previous Song">
+
+                            <!-- Play/Pause Button -->
+                            <img width="35" id="play" src="img/play.svg" alt="Play">
+
+                            <!-- Next Song Button -->
+                            <img width="35" id="next" src="img/nextsong.svg" alt="Next Song">
+                        </div>
+                        <div class="timevol">
+                            <!-- Song Time Display Section -->
+                            <div class="songtime"></div>
+
+                            <!-- Volume Control Section -->
+                            <div class="volume">
+                                <img width="25" src="img/volume.svg" alt="Volume Icon">
+                                <div class="range">
+                                    <!-- Volume Range Input -->
+                                    <input type="range" name="volume" id="volumeRange">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
