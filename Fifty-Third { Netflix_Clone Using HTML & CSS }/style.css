@@ -81,6 +81,12 @@ nav button {
     text-align: center;
 }
 
+.hero1 {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
 .separation {
     height: 7px;
     background-color: rgb(46, 44, 44);
@@ -121,6 +127,15 @@ nav button {
 }
 
 .main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.main1 input {
     padding: 7px 101px 8px 14px;
     color: white;
     font-size: 12px;
