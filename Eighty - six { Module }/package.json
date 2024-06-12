@@ -1,0 +1,17 @@
+{
+  "name": "module-creation-js",
+  "version": "1.0.0",
+  "description": "- Syntax and usage of ES6 Modules.\r - Demonstration of module imports and exports.\r - Advantages and use cases of ES6 Modules.",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
