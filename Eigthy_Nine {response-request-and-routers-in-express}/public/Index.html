@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Requests</title>
+</head>
+
+<body>
+    <h1>I am the index page</h1>
+    <script>
+        async function testPost() {
+            let response = await fetch("/Index", { method: "POST" });
+            let text = await response.text();
+            console.log("text");
+        }
+
+        async function testPut() {
+            let response = await fetch("/Index", { method: "PUT" });
+            let text = await response.text();
+            console.log(text);
+        }
+
+        async function testDelete() {
+            let response = await fetch("/Index", { method: "DELETE" });
+            let text = await response.text();
+            console.log(text);
+        }
+
+        testPost();
+        testPut();
+        testDelete();
+    </script>
+</body>
+
+</html>
